@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  outline: none;
+  background-color: transparent;
+}
+
+.main_container {
+  font-family: 'Roboto', sans-serif;
+  color: #aaaaaa;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #282828;
+  padding: 10px 0;
+  height: 60px;
+}
+
+.header i {
+  font-size: 20px;
+  color: #aaaaaa;
+}
+
+.search {
+  margin-left: 10px;
+}
+
+.search_input {
+  border-radius: 15px;
+  border: none;
+  background: white;
+  color: #181818;
+  padding-left: 30px;
+  outline: none;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/ios-search.svg);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 5px;
+}
+
+.user {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.user__info {
+  display: flex;
+}
+
+.user__info__img {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+}
+
+.user__info__name  {
+  display: flex;
+  align-items: center;
+}
+
+.page-flows_flow {
+  font-size: 20px;
+  color: #aaaaaa;
+  margin: 0 10px;
+}
+
+.main_content {
+  display: flex;
+  background-color: green;
+  height: calc(100vh - 120px);
+}
+
+.left_aside {
+  flex: 1;
+  background-color: blue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  background-color: pink;
+}
+
+.artist_view {
+  background-color: white;
+  flex: 1;
+}
+
+.song_list {
+  background-color: grey;
+  flex: 2;
+}
+
+.right_aside {
+  flex: 1;
+  background-color: yellow;
+}
+
+.footer {
+  height: 60px;
+  background-color: gold;
+}
