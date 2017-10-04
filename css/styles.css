@@ -1,6 +1,15 @@
+@import './grid-system.css';
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+
+img {
+  width: 100%;
 }
 
 button {
@@ -94,6 +103,12 @@ button {
   flex: 4;
 }
 
+.content-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 .artist_view {
   display: flex;
   flex-direction: column;
@@ -150,4 +165,84 @@ button {
 .tabs__header a:hover,
 .tabs__header a:active {
   color: #fff;
+}
+
+.tabs__content {
+  padding: 15px;
+}
+
+/* LATEST RELEASE */
+.latest-release {
+  display: flex;
+  font-size: 14px;
+}
+
+.latest-release__image {
+  flex: 0 0 75px;
+}
+
+.latest-release__song {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  background-color: #282828;
+  padding: 10px 15px;
+}
+
+/* RELATED ARTISTS */
+.related-artists {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.related-artist {
+  flex: 0 1 84px;
+  display: flex;
+  padding: 5px;
+}
+
+.related-artist__image {
+  flex: 0 0 42px;
+}
+
+.related-artist__image img {
+  border-radius: 50%;
+}
+
+.related-artist__name {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .related-artist {
+    flex: 0 0 calc(100% / 2 - 10px);
+    align-items: center;
+    background-color: #282828;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .related-artist__image {
+    margin-right: 10px;
+  }
+
+  .related-artist__name {
+    display: block;
+    flex: 1 1 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .related-artist {
+    flex: 0 0 calc(100% / 3 - 10px);
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .related-artist {
+    flex: 1 0 100%;
+    margin-bottom: 2px;
+  }
 }
