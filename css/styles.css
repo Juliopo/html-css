@@ -1,3 +1,4 @@
+@import './grid-system.css';
 
 * {
   box-sizing: border-box;
@@ -98,6 +99,12 @@ button {
   flex: 4;
 }
 
+.content-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 .artist_view {
   display: flex;
   flex-direction: column;
@@ -154,4 +161,8 @@ button {
 .tabs__header a:hover,
 .tabs__header a:active {
   color: #fff;
+}
+
+.tabs__content {
+  padding: 15px;
 }
