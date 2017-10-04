@@ -2,8 +2,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -2%;
-  margin-right: -2%;
+  margin: 0 -2% 20px;
 }
 
 [class*="col-"] {
