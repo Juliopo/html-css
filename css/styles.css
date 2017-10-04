@@ -80,7 +80,6 @@ button {
 
 .main_content {
   display: flex;
-  background-color: green;
   height: calc(100vh - 120px);
 }
 
@@ -93,16 +92,18 @@ button {
   display: flex;
   flex-direction: column;
   flex: 4;
-  background-color: pink;
 }
 
 .artist_view {
-  background-color: white;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/g-eazy.png);
+  background-size: cover;
+  flex: 0 0 320px;
 }
 
 .song_list {
-  background-color: grey;
   flex: 2;
 }
 
@@ -114,4 +115,39 @@ button {
 .footer {
   height: 60px;
   background-color: gold;
+}
+
+/* TABS */
+.tabs__header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0 2px;
+}
+
+.tabs__header ul {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tabs__header li {
+  margin: 0 15px;
+  padding-bottom: 15px;
+}
+
+.tabs__header .active {
+  color: #fff;
+  border-bottom: 4px solid #1ed760;
+}
+
+.tabs__header a {
+  color: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.tabs__header a:hover,
+.tabs__header a:active {
+  color: #fff;
 }
